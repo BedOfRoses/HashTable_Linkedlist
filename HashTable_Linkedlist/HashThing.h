@@ -16,7 +16,13 @@ public:
 
 	void insertItem(int key);
 
-	int hashFunction(int x) const {
+	int hashFunction(int x) const { 
+		
+		// THIS IS BASICALLY "ENCRYPTION" creates a key.
+		/*
+		int y = sqrt(x * 200 / 3 + 4);
+		return (y % bucket);
+		*/
 		return (x % bucket);
 	}
 
