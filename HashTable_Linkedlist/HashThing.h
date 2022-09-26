@@ -26,6 +26,8 @@ public:
 
 	void deleteItem(int key);
 
+	void deleteItemSpecific(int key, int elem);
+
 };
 
 template<typename T>
@@ -80,6 +82,21 @@ void Hash<T>::deleteItem(int key)
 	//bucketlist.erase(bucketlist.at(index));
 
 }
+
+
+template<typename T>
+void Hash<T>::deleteItemSpecific(int key, int elem)
+{
+	int index = hashFunction(key);
+	std::cout << " REMOVE-index : " << index << " REMOVE-Key: " << key << std::endl;
+
+
+	bucketlist[index].RemoveAt(elem);
+	
+
+
+}
+
 
 
 template<typename T>

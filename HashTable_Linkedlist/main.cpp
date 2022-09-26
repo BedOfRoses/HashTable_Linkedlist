@@ -20,7 +20,8 @@ int main() {
 
 	h.DisplayHash();
 	
-	h.deleteItem(3);
+	//h.deleteItem(3);
+	h.deleteItemSpecific(3, 0);
 
 	std::cout << "Display again" << std::endl;
 
